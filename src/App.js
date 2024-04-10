@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './Login';
+import AdminPanel from './AdminPanel';
 import './App.css';
+import TurmasView from './TurmasView';
+import MinhasTurmas from './MinhasTurmas';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router classname="app">
+        <Routes>
+          <Route path="/admin" element={<AdminPanel />} />
+          <Route path="/turmas" element={<TurmasView />} />
+          <Route path="/minhas-turmas" element={<MinhasTurmas />} />
+          <Route path="/" element={<Login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

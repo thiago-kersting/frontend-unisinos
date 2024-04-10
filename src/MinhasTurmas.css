@@ -1,0 +1,25 @@
+.minhas-turmas {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .minhas-turmas h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .minhas-turmas ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .minhas-turmas li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
